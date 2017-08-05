@@ -12,7 +12,7 @@ function check_git_prompt_info() {
             echo "%{$fg[blue]%}detached-head%{$reset_color%}) $(git_prompt_status)
 %{$fg[yellow]%}→ "
         else
-            echo "$(git_prompt_info) $(git_prompt_status)
+            echo "$(git_prompt_info) $(git_prompt_status) $(git_prompt_short_sha)
 %{$fg_bold[cyan]%}→ "
         fi
     else
@@ -33,8 +33,6 @@ PROMPT=$'\n'$LAMBDA'\
  %{$fg_no_bold[magenta]%}[%3~]\
  $(check_git_prompt_info)\
 %{$reset_color%}'
-
-RPROMPT='$(get_right_prompt)'
 
 # Format for git_prompt_info()
 ZSH_THEME_GIT_PROMPT_PREFIX="at %{$fg[blue]%} "
