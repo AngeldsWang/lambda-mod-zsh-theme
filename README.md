@@ -6,4 +6,4 @@ A ZSH theme optimized for people who use:
 
 ---
 
-![Screenshot](https://raw.githubusercontent.com/halfo/lambda-mod-zsh-theme/master/screenshot.png)
+![Screenshot-Custom](./Screenshot-Custom.png)
